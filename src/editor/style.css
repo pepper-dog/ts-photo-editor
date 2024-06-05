@@ -1,0 +1,78 @@
+.canvas-editor {
+  height: 100vh;
+  width: 100%;
+}
+
+.canvas-editor__header {
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  flex-direction: row;
+  height: 58px;
+  line-height: normal;
+  justify-content: space-between;
+  padding: 16px;
+  width: 100%;
+}
+
+.canvas-editor__main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.canvas-editor__toolbar {
+  padding: 16px;
+  height: 100%;
+  border-right: 1px solid #ccc;
+}
+
+.toolbar__button {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #333;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 8px;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.toolbar__button--selected {
+  background-color: #f9f9f9;
+  border-color: #2a2a2a;
+}
+
+.toolbar__button:hover {
+  background-color: #f9f9f9;
+}
+
+.canvas-editor__content-editor {
+  flex-grow: 1;
+  height: 100%;
+  position: relative;
+  overflow: auto;
+}
+
+.content-editor__canvas {
+  background-image: linear-gradient(
+      0deg,
+      rgba(225, 228, 232, 0),
+      rgba(225, 228, 232, 0) 7px,
+      #e1e4e8,
+      rgba(225, 228, 232, 0) 8px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(225, 228, 232, 0),
+      rgba(225, 228, 232, 0) 7px,
+      #e1e4e8,
+      rgba(225, 228, 232, 0) 8px
+    );
+  background-position: center center;
+  background-size: 15px 15px;
+}
